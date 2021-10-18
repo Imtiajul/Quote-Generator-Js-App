@@ -165,6 +165,7 @@ const greatTalkTags = quotes.filter(function (quote) {
  * click event listener for the print quote button
  ***/
 btnShowAnotherQ.addEventListener('click', function (event) {
+   event.preventDefault();
    console.log(tags.value);
    const tagValue = tags.value;
    if (tagValue == 'default') {
@@ -182,4 +183,5 @@ btnShowAnotherQ.addEventListener('click', function (event) {
    }
 });
 
-setInterval(action, 3000); // 60000 = 1 minute
+// console.log(allQuotes, ' ', quotes.length);
+setInterval("printToHTML(printQuote(quotes))", 7000); // 60000 = 1 minute
