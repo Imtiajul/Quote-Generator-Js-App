@@ -2,7 +2,8 @@
 
 body {
   background-image: url("../images/nature-bg.jpg");
-  background-position: unset;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: "Playfair Display", serif;
